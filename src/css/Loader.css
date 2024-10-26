@@ -1,0 +1,24 @@
+.tm-horo-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.tm-horo-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #009999;
+}
+
+.tm-horo-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.tm-horo-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}

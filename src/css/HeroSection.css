@@ -1,0 +1,62 @@
+.tm-hero {
+    height: 200px; /* Altura completa de la ventana */
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Posicionamiento relativo para cualquier superposición */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    color: #ffffff; /* Color de texto */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejor legibilidad */
+}
+
+.tm-search-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el formulario */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+}
+
+.tm-search-input {
+    border: none; /* Sin borde por defecto */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados a la izquierda */
+    padding: 10px; /* Espaciado interno */
+    width: 250px; /* Ancho fijo */
+}
+
+.tm-search-btn {
+    border-radius: 0 5px 5px 0; /* Bordes redondeados a la derecha */
+    background-color: #009999; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.tm-search-btn:hover {
+    background-color: #007f7f; /* Color al pasar el ratón */
+}
+
+.tm-horo-section {
+    background-color: #f9f9f9; /* Color de fondo de la sección */
+    padding: 60px 0; /* Espaciado vertical */
+}
+
+.tm-horo-title {
+    text-align: center; /* Centrado del texto */
+    font-size: 2rem; /* Tamaño del texto */
+    margin-bottom: 30px; /* Margen inferior */
+    color: #009999; /* Color del texto */
+}
+
+.tm-horo-item {
+    margin: 20px; /* Margen alrededor del elemento */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #e1e1e1; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo del ítem */
+    transition: box-shadow 0.3s ease; /* Transición suave para sombra */
+}
+
+.tm-horo-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el ratón */
+}

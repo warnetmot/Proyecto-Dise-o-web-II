@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* app.css */
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Color de fondo suave */
+  color: #343a40; /* Color de texto oscuro */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  color: #007bff; /* Color primario para los encabezados */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Footer */
+.tm-bg-gray {
+  background-color: #343a40; /* Fondo gris oscuro para el footer */
+  color: #f8f9fa; /* Color de texto claro */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tm-footer-title {
+  font-size: 1.5rem; /* Tamaño de fuente para títulos en el footer */
 }
 
-.App-link {
-  color: #61dafb;
+.tm-footer-links {
+  list-style-type: none; /* Eliminar viñetas de la lista */
+  padding: 0; /* Eliminar padding */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.tm-footer-links li {
+  margin-bottom: 10px; /* Espaciado entre los enlaces */
+}
+
+.tm-footer-links a {
+  color: #f8f9fa; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.tm-footer-links a:hover {
+  text-decoration: underline; /* Subrayar en hover */
+}
+
+.tm-social-links {
+  list-style-type: none; /* Eliminar viñetas de la lista */
+  padding: 0; /* Eliminar padding */
+}
+
+.tm-social-links li {
+  margin-left: 10px; /* Espaciado entre iconos sociales */
+}
+
+.tm-social-links a {
+  color: #f8f9fa; /* Color de los iconos sociales */
+  font-size: 1.5rem; /* Tamaño de los iconos */
+}
+
+.tm-social-links a:hover {
+  color: #007bff; /* Cambiar color en hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tm-footer-title {
+      font-size: 1.2rem; /* Tamaño de fuente más pequeño en móviles */
   }
 }
