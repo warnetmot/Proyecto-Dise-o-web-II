@@ -64,3 +64,35 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.2rem; /* Tamaño de fuente más pequeño en móviles */
   }
 }
+.loader {
+  display: flex;
+  flex-direction: column; /* Para alinear el texto y el spinner verticalmente */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: #030c17; /* Color de fondo */
+  color: white; /* Color del texto */
+}
+
+.spinner {
+  border: 10px solid rgba(255, 255, 255, 0.3); /* Color del borde del spinner */
+  border-top: 10px solid white; /* Color superior para el efecto de giro */
+  border-radius: 50%; /* Hace el spinner redondo */
+  width: 60px; /* Ancho del spinner */
+  height: 60px; /* Alto del spinner */
+  animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Inicia sin rotación */
+  }
+  100% {
+    transform: rotate(360deg); /* Rota 360 grados */
+  }
+}
+
+.loading-text {
+  margin-top: 20px; /* Espaciado entre el spinner y el texto */
+  font-size: 1.5rem; /* Tamaño de fuente del texto */
+}

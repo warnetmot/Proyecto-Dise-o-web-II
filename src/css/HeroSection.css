@@ -1,5 +1,5 @@
 .tm-hero {
-    height: 200px; /* Altura completa de la ventana */
+    height: 300px; /* Altura completa de la ventana */
     background-size: cover; /* Asegura que la imagen cubra todo el div */
     background-position: center; /* Centra la imagen */
     position: relative; /* Posicionamiento relativo para cualquier superposición */
@@ -59,4 +59,19 @@
 
 .tm-horo-item:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el ratón */
+}
+.tm-search-input {
+    border: none; /* Sin borde por defecto */
+    outline: none; /* Sin contorno al hacer clic */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados a la izquierda */
+    padding: 10px; /* Espaciado interno */
+    width: 250px; /* Ancho fijo */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+    box-shadow: none; /* Sin sombra */
+}
+
+.tm-search-input:focus {
+    background-color: #ffffff; /* Fondo blanco al enfocar el campo */
+    box-shadow: none; /* Sin sombra al enfocar */
 }

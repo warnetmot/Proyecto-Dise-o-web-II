@@ -1,14 +1,12 @@
 import React from 'react';
 import '../css/Loader.css';
 
-function Loader() {
+const Loader = () => {
     return (
-        <div id="loader-wrapper">
-            <div id="loader"></div>
-            <div className="loader-section section-left"></div>
-            <div className="loader-section section-right"></div>
+        <div className="loader">
+            <div className="spinner"></div>
+            <div className="loading-text">Cargando...</div>
         </div>
     );
-}
-
+};
 export default Loader;

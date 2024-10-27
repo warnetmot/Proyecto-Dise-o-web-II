@@ -1,6 +1,11 @@
 import React from 'react';
 import '../css/Footer.css';
 
+// Importa las imágenes de las redes sociales
+import facebookIcon from '../img/facebook.png';
+import twitterIcon from '../img/gorjeo.png';
+import instagramIcon from '../img/instagram.png';
+import pinterestIcon from '../img/pinterest.png';
 
 function Footer() {
     return (
@@ -22,10 +27,26 @@ function Footer() {
                     </div>
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                         <ul className="tm-social-links d-flex justify-content-end pl-0 mb-5">
-                            <li className="mb-2"><a href="https://facebook.com"><i className="fab fa-facebook"></i></a></li>
-                            <li className="mb-2"><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
-                            <li className="mb-2"><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
-                            <li className="mb-2"><a href="https://pinterest.com"><i className="fab fa-pinterest"></i></a></li>
+                            <li className="mb-2">
+                                <a href="https://facebook.com">
+                                    <img src={facebookIcon} alt="Facebook" />
+                                </a>
+                            </li>
+                            <li className="mb-2">
+                                <a href="https://twitter.com">
+                                    <img src={twitterIcon} alt="Twitter" />
+                                </a>
+                            </li>
+                            <li className="mb-2">
+                                <a href="https://instagram.com">
+                                    <img src={instagramIcon} alt="Instagram" />
+                                </a>
+                            </li>
+                            <li className="mb-2">
+                                <a href="https://pinterest.com">
+                                    <img src={pinterestIcon} alt="Pinterest" />
+                                </a>
+                            </li>
                         </ul>
                         <a href="#" className="tm-text-gray text-right d-block mb-2">Terms of Use</a>
                         <a href="#" className="tm-text-gray text-right d-block">Privacy Policy</a>
@@ -37,3 +58,4 @@ function Footer() {
 }
 
 export default Footer;
+
