@@ -1,13 +1,13 @@
 import React from 'react';
-import '../css/galeria.css'; // Ajusta la ruta según sea necesario
-import img03 from '../img/img-03.jpg'; // Importa la imagen
-import img04 from '../img/img-04.jpg'; // Importa la imagen
-import img05 from '../img/img-05.jpg'; // Importa la imagen
-import img06 from '../img/img-06.jpg'; // Importa la imagen
+import '../css/galeria.css'; 
+import img03 from '../img/img-03.jpg'; 
+import img04 from '../img/img-04.jpg'; 
+import img05 from '../img/img-05.jpg'; 
+import img06 from '../img/img-06.jpg'; 
 
 const galleryItems = [
-    { id: 1, title: 'Clocks', date: '18 Oct 2020', views: '9,906', imgSrc: img03 },
-    { id: 2, title: 'Plants', date: '14 Oct 2020', views: '16,100', imgSrc: img04 },
+    { id: 1, title: 'relojes', date: '18 Oct 2020', views: '9,906', imgSrc: img03 },
+    { id: 2, title: 'plantas', date: '14 Oct 2020', views: '16,100', imgSrc: img04 },
     { id: 3, title: 'Morning', date: '12 Oct 2020', views: '12,460', imgSrc: img05 },
     { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
     { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
@@ -15,6 +15,8 @@ const galleryItems = [
     { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
     { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
     { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
+    { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
+
 
 ];
 
@@ -36,7 +38,7 @@ function Gallery() {
                             <img src={item.imgSrc} alt={item.title} className="img-fluid" />
                             <figcaption>
                                 <h2>{item.title}</h2>
-                                <a href="photo-detail.html">View more</a>
+                                <a href="photo-detail.html">Ver mas</a>
                             </figcaption>
                         </figure>
                         <div className="d-flex justify-content-between tm-text-gray">

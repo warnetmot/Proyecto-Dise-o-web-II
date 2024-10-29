@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/Footer.css';
 
-// Importa las imágenes de las redes sociales
 import facebookIcon from '../img/facebook.png';
 import twitterIcon from '../img/gorjeo.png';
 import instagramIcon from '../img/instagram.png';

@@ -7,24 +7,23 @@
 
 .tm-gallery div {
     padding: 15px;
-    flex: 1 0 calc(33.333% - 30px); /* 3 items per row */
+    flex: 1 0 calc(22.333% - 30px);
     box-sizing: border-box;
-    position: relative; /* Necesario para posicionar el caption */
+    position: relative;
 }
 
 /* Efecto Ming */
 figure.effect-ming {
     background: #030c17;
-    position: relative; /* Para que el caption se posicione sobre la imagen */
-    overflow: hidden; /* Asegura que el caption no se muestre fuera de la imagen */
+    position: relative;
+    overflow: hidden;
 }
 
 figure.effect-ming img {
-    opacity: 0.9;
-    transition: opacity 0.35s;
     width: 100%;
-    height: auto;
-    border-radius: 5px; /* Bordes redondeados */
+    height: 200px; /* Altura fija para todas las imágenes */
+    border-radius: 5px;
+    object-fit: cover; /* Asegura que la imagen cubra el área designada */
 }
 
 figure.effect-ming figcaption::before {
@@ -54,26 +53,26 @@ figure.effect-ming:hover h2 {
     transform: scale3d(1, 1, 1);
 }
 
-figure.effect-ming:hover figcaption { 
-    background-color: rgba(58, 52, 42, 0); 
+figure.effect-ming:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
 }
 
-figure.effect-ming:hover img { 
-    opacity: 0.4; 
+figure.effect-ming:hover img {
+    opacity: 0.4;
 }
 
 /* Estilos para enlaces y pie de página */
 .tm-footer-links li {
     list-style: none;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 }
 
-.tm-footer-links li a { 
-    color: #999999; 
+.tm-footer-links li a {
+    color: #999999;
 }
 
-.tm-footer-links li a:hover { 
-    color: #009999; 
+.tm-footer-links li a:hover {
+    color: #009999;
 }
 
 .tm-social-links li {
@@ -81,8 +80,8 @@ figure.effect-ming:hover img {
     margin-right: 15px;
 }
 
-.tm-social-links li:last-child { 
-    margin-right: 0; 
+.tm-social-links li:last-child {
+    margin-right: 0;
 }
 
 .tm-social-links li a {
@@ -100,28 +99,29 @@ figure.effect-ming:hover img {
     background-color: #009999;
 }
 
-.tm-footer { 
-    font-size: 0.95rem; 
+.tm-footer {
+    font-size: 0.95rem;
 }
 
-.tm-footer-title { 
-    font-size: 1.4rem; 
+.tm-footer-title {
+    font-size: 1.4rem;
 }
+
 figure.effect-ming figcaption {
-    display: flex; /* Usar flexbox para centrar el contenido */
-    flex-direction: column; /* Colocar el contenido en columna */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    height: 100%; /* Asegurar que el figcaption ocupe toda la altura del contenedor */
-    position: absolute; /* Para que se superponga sobre la imagen */
-    top: 0; /* Posicionar en la parte superior */
-    left: 0; /* Posicionar a la izquierda */
-    right: 0; /* Posicionar a la derecha */
-    bottom: 0; /* Posicionar en la parte inferior */
-    color: #fff; /* Cambiar el color del texto si es necesario */
-    text-align: center; /* Centrar el texto */
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.35s; /* Transición de opacidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s;
 }
 
 figure.effect-ming:hover figcaption {
