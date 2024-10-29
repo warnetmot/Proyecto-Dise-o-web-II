@@ -34,6 +34,7 @@ function App() {
             <Gallery />
             <Pagination />
             <Footer />
+            
         </div>
     );
 }
