@@ -11,23 +11,29 @@ import HeroSection from './components/HeroSection';
 import Gallery from './components/Gallery';
 import Pagination from './components/Pagination';
 import Footer from './components/Footer';
+import Gallery2 from './components/Gallery2';
 
 function App() {
     const [loading, setLoading] = useState(true);
     const images = [
         {
-            original: "https://picsum.photos/id/1018/1000/600",
-            thumbnail: "https://picsum.photos/id/1018/1000/600",
+            original: "https://picsum.photos/id/1015/3840/2160", // 4K resolucion
+            thumbnail: "https://picsum.photos/id/1015/480/270", 
         },
         {
-            original: "https://picsum.photos/id/1015/1000/600", // Corregido
-            thumbnail: "https://picsum.photos/id/1015/1000/600",
+            original: "https://picsum.photos/id/1015/3840/2160", 
+            thumbnail: "https://picsum.photos/id/1015/480/270", 
         },
         {
-            original: "https://picsum.photos/id/1019/1000/600", // Corregido
-            thumbnail: "https://picsum.photos/id/1019/1000/600",
+            original: "https://picsum.photos/id/1019/3840/2160", 
+            thumbnail: "https://picsum.photos/id/1019/480/270",
         },
+        {
+            original: "https://picsum.photos/id/1015/3840/2160", 
+            thumbnail: "https://picsum.photos/id/1015/480/270", 
+        }
     ];
+    
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -56,6 +62,8 @@ function App() {
                     slideInterval={3000}
                 />
             </div>
+            <Gallery2/>
+
             <Pagination />
             <Footer />
         </div>

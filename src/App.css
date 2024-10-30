@@ -1,98 +1,153 @@
-/* app.css */
-
-/* Estilos generales */
 body {
   margin: 0;
+  padding: 20px; /* Añade margen en los bordes de la página */
   font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa; /* Color de fondo suave */
-  color: #343a40; /* Color de texto oscuro */
+  background-color: #f8f9fa;
+  color: #343a40;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #007bff; /* Color primario para los encabezados */
+  color: #007bff;
 }
 
-/* Footer */
 .tm-bg-gray {
-  background-color: #343a40; /* Fondo gris oscuro para el footer */
-  color: #f8f9fa; /* Color de texto claro */
+  background-color: #343a40;
+  color: #f8f9fa;
 }
 
 .tm-footer-title {
-  font-size: 1.5rem; /* Tamaño de fuente para títulos en el footer */
+  font-size: 1.5rem;
 }
 
 .tm-footer-links {
-  list-style-type: none; /* Eliminar viñetas de la lista */
-  padding: 0; /* Eliminar padding */
+  list-style-type: none;
+  padding: 0;
 }
 
 .tm-footer-links li {
-  margin-bottom: 10px; /* Espaciado entre los enlaces */
+  margin-bottom: 10px;
 }
 
 .tm-footer-links a {
-  color: #f8f9fa; /* Color de los enlaces */
-  text-decoration: none; /* Sin subrayado */
+  color: #f8f9fa;
+  text-decoration: none;
 }
 
 .tm-footer-links a:hover {
-  text-decoration: underline; /* Subrayar en hover */
+  text-decoration: underline;
 }
 
 .tm-social-links {
-  list-style-type: none; /* Eliminar viñetas de la lista */
-  padding: 0; /* Eliminar padding */
+  list-style-type: none;
+  padding: 0;
 }
 
 .tm-social-links li {
-  margin-left: 10px; /* Espaciado entre iconos sociales */
+  margin-left: 10px;
 }
 
 .tm-social-links a {
-  color: #f8f9fa; /* Color de los iconos sociales */
-  font-size: 1.5rem; /* Tamaño de los iconos */
+  color: #f8f9fa;
+  font-size: 1.5rem;
 }
 
 .tm-social-links a:hover {
-  color: #007bff; /* Cambiar color en hover */
+  color: #007bff;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .tm-footer-title {
-      font-size: 1.2rem; /* Tamaño de fuente más pequeño en móviles */
+      font-size: 1.2rem;
   }
 }
+
 .loader {
   display: flex;
-  flex-direction: column; /* Para alinear el texto y el spinner verticalmente */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-  background-color: #030c17; /* Color de fondo */
-  color: white; /* Color del texto */
+  height: 100vh;
+  background-color: #030c17;
+  color: white;
 }
 
 .spinner {
-  border: 10px solid rgba(255, 255, 255, 0.3); /* Color del borde del spinner */
-  border-top: 10px solid white; /* Color superior para el efecto de giro */
-  border-radius: 50%; /* Hace el spinner redondo */
-  width: 60px; /* Ancho del spinner */
-  height: 60px; /* Alto del spinner */
-  animation: spin 1s linear infinite; /* Animación de giro */
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  border-top: 10px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg); /* Inicia sin rotación */
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg); /* Rota 360 grados */
+    transform: rotate(360deg);
   }
 }
 
 .loading-text {
-  margin-top: 20px; /* Espaciado entre el spinner y el texto */
-  font-size: 1.5rem; /* Tamaño de fuente del texto */
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px; /* Separación entre el borde de la ventana y el modal */
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-text {
+  margin-top: 15px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
 }
