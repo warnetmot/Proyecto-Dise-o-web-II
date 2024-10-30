@@ -28,3 +28,8 @@
 .tm-footer-links li a:hover {
     color: #009999;
 }
+
+.tm-social-links img {
+    width: 30px; 
+    height: auto;
+}
