@@ -1,111 +1,55 @@
-/* Estilos para la galería */
-.tm-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: -15px;
-}
-
 .tm-gallery div {
     flex: 1 0 calc(22.333% - 30px);
     position: relative;
     box-sizing: border-box;
-    transition: transform 0.3s; /* Efecto de transición al hover */
+    transition: transform 0.3s; 
 }
-
-.tm-gallery div:hover {
-    transform: scale(1.02); /* Aumentar ligeramente el tamaño al pasar el ratón */
-}
-
-/* Efecto Ming */
 figure.effect-ming {
-    background: #030c17;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    margin: 0;
-    transition: box-shadow 0.3s; /* Transición para la sombra */
-}
-
-figure.effect-ming:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra al pasar el ratón */
+	background: #030c17;
 }
 
 figure.effect-ming img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: opacity 0.35s;
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
 }
 
-figure.effect-ming figcaption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #fff;
-    text-align: center;
+figure.effect-ming figcaption{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h2 {
+    font-size: 1.3em;
+    color: white; 
     opacity: 0;
-    background-color: rgba(58, 52, 42, 0.6); /* Semitransparente */
-    transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
-figure.effect-ming:hover figcaption {
-    opacity: 1; /* Aumentar opacidad al hover */
+/* Efento para aparecer transparente en */
+figure.effect-ming:hover figcaption,
+figure.effect-ming:hover h2 {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
 }
 
-/* Estilos para enlaces y pie de página */
-.tm-footer-links li,
-.tm-social-links li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-.tm-footer-links li a,
-.tm-social-links li a {
-    color: #999;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.tm-footer-links li a:hover {
-    color: #009999;
-}
-
-.tm-social-links li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.tm-social-links li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: background-color 0.3s, transform 0.3s; /* Transición más suave */
-}
-
-.tm-social-links li a:hover {
-    color: #fff;
-    background-color: #009999;
-    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
-}
-
-.tm-footer {
-    font-size: 0.95rem;
-}
-
-.tm-footer-title {
-    font-size: 1.4rem;
-}
-
+figure.effect-ming:hover figcaption { background-color: rgba(58,52,42,0); }
+figure.effect-ming:hover img { opacity: 0.4; } 
 /* Modal Styles */
 .modal {
     display: flex;
@@ -121,18 +65,18 @@ figure.effect-ming:hover figcaption {
 }
 
 .modal-content {
-    display: flex; /* Mantiene la imagen y el texto en una fila */
-    gap: 10px; /* Espacio entre imagen y texto */
+    display: flex; 
+    gap: 10px; 
     padding: 20px;
-    max-width: 800px; /* Limitar el ancho del modal */
-    max-height: 80%; /* Limitar la altura del modal */
-    overflow: auto; /* Permitir el desplazamiento si es necesario */
+    max-width: 800px;
+    max-height: 80%; 
+    overflow: auto; 
 }
 
 .modal img {
-    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    max-height: 400px; /* Limitar la altura máxima de la imagen */
-    margin: auto; /* Centra la imagen dentro del contenedor */
+    max-width: 100%; 
+    max-height: 400px; 
+    margin: auto; 
     border-radius: 8px;
 }
 
@@ -143,15 +87,15 @@ figure.effect-ming:hover figcaption {
 }
 
 .download-button {
-    padding: 5px 5px; /* Espaciado para el botón */
-    background-color: #009999; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto en el botón */
-    cursor: pointer; /* Cambia el cursor al pasar */
-    transition: background-color 0.3s, transform 0.3s; /* Efecto de transición */
-    margin-top: 15px; /* Espacio superior */
+    padding: 5px 5px; 
+    background-color: #009999; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-top: 15px; 
 }
 
 .download-button:hover {

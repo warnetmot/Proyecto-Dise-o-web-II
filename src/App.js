@@ -21,16 +21,16 @@ function App() {
             thumbnail: "https://picsum.photos/id/1015/480/270", 
         },
         {
-            original: "https://picsum.photos/id/1015/3840/2160", 
-            thumbnail: "https://picsum.photos/id/1015/480/270", 
+            original: "https://picsum.photos/id/1016/3840/2160", 
+            thumbnail: "https://picsum.photos/id/1016/480/270", 
         },
         {
             original: "https://picsum.photos/id/1019/3840/2160", 
             thumbnail: "https://picsum.photos/id/1019/480/270",
         },
         {
-            original: "https://picsum.photos/id/1015/3840/2160", 
-            thumbnail: "https://picsum.photos/id/1015/480/270", 
+            original: "https://picsum.photos/id/1020/3840/2160", 
+            thumbnail: "https://picsum.photos/id/1020/480/270", 
         }
     ];
     

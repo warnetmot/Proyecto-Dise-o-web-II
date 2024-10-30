@@ -1,27 +1,19 @@
 import React, { useState } from 'react';
 import '../css/galeria2.css'; 
-import img03 from '../img/img-03.jpg'; 
-import img04 from '../img/img-04.jpg'; 
-import img05 from '../img/img-05.jpg'; 
-import img06 from '../img/img-06.jpg'; 
-import img07 from '../img/img-07.jpg'; 
-import img08 from '../img/img-08.jpg'; 
-import img09 from '../img/img-09.jpg'; 
-import img10 from '../img/img-10.jpg'; 
-import img11 from '../img/img-11.jpg'; 
-import img12 from '../img/img-12.jpg'; 
+
+import img01 from '../img/img01.jpg'; 
+import img02 from '../img/img02.jpg'; 
+import img03 from '../img/img03.jpg'; 
+import img04 from '../img/img04.jpg'; 
+
 
 const galleryItems = [
-    { id: 1, title: 'Relojes', date: '18 Oct 2020', views: '9,906', imgSrc: img03 },
-    { id: 2, title: 'Plantas', date: '14 Oct 2020', views: '16,100', imgSrc: img04 },
-    { id: 3, title: 'Morning', date: '12 Oct 2020', views: '12,460', imgSrc: img05 },
-    { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
-    { id: 5, title: 'Paisaje', date: '10 Oct 2020', views: '11,402', imgSrc: img07 },
-    { id: 6, title: 'Ciudad', date: '10 Oct 2020', views: '11,402', imgSrc: img08 },
-    { id: 7, title: 'Naturaleza', date: '10 Oct 2020', views: '11,402', imgSrc: img09 },
-    { id: 8, title: 'Atardecer', date: '10 Oct 2020', views: '11,402', imgSrc: img10 },
-    { id: 9, title: 'Montaña', date: '10 Oct 2020', views: '11,402', imgSrc: img11 },
-    { id: 10, title: 'Mar', date: '10 Oct 2020', views: '11,402', imgSrc: img12 },
+    { id: 1, title: 'Dragon Ball', date: '18 Oct 2020', views: '9,906', imgSrc: img01 },
+    { id: 2, title: 'Coco', date: '14 Oct 2020', views: '16,100', imgSrc: img02 },
+    { id: 3, title: 'Los Croods', date: '12 Oct 2020', views: '12,460', imgSrc: img03 },
+    { id: 4, title: 'Your name', date: '10 Oct 2020', views: '11,402', imgSrc: img04 },
+
+
 ];
 
 function Gallery2() {
@@ -46,9 +38,9 @@ function Gallery2() {
                     <div key={item.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                         <figure className="effect-ming tm-video-item" onClick={() => handleImageClick(item)}>
                             <img src={item.imgSrc} alt={item.title} className="img-fluid" />
-                            <figcaption>
+                            <figcaption class="d-flex align-items-center justify-content-center">
                                 <h2>{item.title}</h2>
-                                <a href="#">Ver más</a>
+                                <a href="#"></a>
                             </figcaption>
                         </figure>
                         <div className="d-flex justify-content-between tm-text-gray">

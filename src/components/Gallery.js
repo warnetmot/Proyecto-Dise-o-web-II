@@ -12,16 +12,16 @@ import img11 from '../img/img-11.jpg';
 import img12 from '../img/img-12.jpg'; 
 
 const galleryItems = [
-    { id: 1, title: 'Relojes', date: '18 Oct 2020', views: '9,906', imgSrc: img03 },
-    { id: 2, title: 'Plantas', date: '14 Oct 2020', views: '16,100', imgSrc: img04 },
-    { id: 3, title: 'Morning', date: '12 Oct 2020', views: '12,460', imgSrc: img05 },
-    { id: 4, title: 'Pinky', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
-    { id: 5, title: 'Paisaje', date: '10 Oct 2020', views: '11,402', imgSrc: img07 },
-    { id: 6, title: 'Ciudad', date: '10 Oct 2020', views: '11,402', imgSrc: img08 },
-    { id: 7, title: 'Naturaleza', date: '10 Oct 2020', views: '11,402', imgSrc: img09 },
-    { id: 8, title: 'Atardecer', date: '10 Oct 2020', views: '11,402', imgSrc: img10 },
-    { id: 9, title: 'Montaña', date: '10 Oct 2020', views: '11,402', imgSrc: img11 },
-    { id: 10, title: 'Mar', date: '10 Oct 2020', views: '11,402', imgSrc: img12 },
+    { id: 1, title: 'Girl Sunset', date: '18 Oct 2020', views: '9,906', imgSrc: img03 },
+    { id: 2, title: 'Nature Man', date: '14 Oct 2020', views: '16,100', imgSrc: img04 },
+    { id: 3, title: 'Fantasy', date: '12 Oct 2020', views: '12,460', imgSrc: img05 },
+    { id: 4, title: 'Street Urban', date: '10 Oct 2020', views: '11,402', imgSrc: img06 },
+    { id: 5, title: 'Black Panter', date: '10 Oct 2020', views: '11,402', imgSrc: img07 },
+    { id: 6, title: 'Fury', date: '10 Oct 2020', views: '11,402', imgSrc: img08 },
+    { id: 7, title: 'Super Girl', date: '10 Oct 2020', views: '11,402', imgSrc: img09 },
+    { id: 8, title: 'Wonder Woman', date: '10 Oct 2020', views: '11,402', imgSrc: img10 },
+    { id: 9, title: 'Chopers', date: '10 Oct 2020', views: '11,402', imgSrc: img11 },
+    { id: 10, title: 'Naked', date: '10 Oct 2020', views: '11,402', imgSrc: img12 },
 ];
 
 function Gallery() {
@@ -50,9 +50,9 @@ function Gallery() {
                     <div key={item.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                         <figure className="effect-ming tm-video-item" onClick={() => handleImageClick(item)}>
                             <img src={item.imgSrc} alt={item.title} className="img-fluid" />
-                            <figcaption>
-                                <h2>{item.title}</h2>
-                                <a href="#">Ver más</a>
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2 >{item.title}</h2>
+                                <a href="#"></a>
                             </figcaption>
                         </figure>
                         <div className="d-flex justify-content-between tm-text-gray">
